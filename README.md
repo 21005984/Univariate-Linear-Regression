@@ -20,15 +20,10 @@ Program for Univariate linear regression using the least squares method.
 Developed by: your name:Meiyaasi.V
 RegisterNumber: 21005984
 '''
-~~~
+
 import numpy as np
-# Preprocessing Input data
-~~~
 X = np.array(eval(input()))
 Y = np.array(eval(input()))
-~~~
-# Building the model
-~~~
 X_mean = np.mean(X)
 Y_mean = np.mean(Y)
 num = 0
@@ -38,14 +33,14 @@ for i in range(len(X)):
 	den += (X[i] - X_mean)**2
 m = num / den
 c = Y_mean - m*X_mean
-~~~
-# write your code here
-~~~
 print (m, c)
 Y_pred = m*X + c
 
 #Predict the output
 print (Y_pred)
+plt.scatter(x,y color = "Red")
+plt.plot(x,y_pred, color = Green)
+plt.show()
 ~~~
 ## Output
 ![output](.//L1.png)
